@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* This is the color container */
+.colors{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* This are the divs whit the colors */
+.colors div{
+    height: 150px;
+    width: 11%;
+    min-width: 150px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* Whit this we reduce the opacity when the color is selected*/
+.colors div:active{
+    opacity: .5;
+}
+.colors div:nth-child(1){
+    background-color: #48dbfb;
+}
+.colors div:nth-child(2){
+    background-color: #1dd1a1;
+}
+.colors div:nth-child(3){
+    background-color: #ee5253
+}
+.colors div:nth-child(4){
+    background-color: #feca57;
+}
+.colors div:nth-child(5){
+    background-color: #f368e0;
+}
+.colors div:nth-child(6){
+    background-color: #341f97;
+}
+.colors div:nth-child(7){
+    background-color: #222f3e;
+}
+.colors div:nth-child(8){
+    background-color: #FFF;
+}
+/* This is the area where the selected color is displayed */
+.screen{
+    height: 60vh;
+    width: 100%;
+    border: 2px dashed black;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
